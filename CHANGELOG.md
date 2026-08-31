@@ -32,8 +32,8 @@ First public release.
   which never launches Claude.
 - **Fast by construction.** Reads only a 64 KB window from each end of a
   transcript, takes prompt counts from `history.jsonl`, and caches metadata in
-  `<claude-config>/wims/cache.json` keyed by path, size and mtime. ~240 ms cold
-  and ~140 ms warm against 122 sessions and 412 MB of transcripts.
+  `<claude-config>/wims/cache.json` keyed by path, size and mtime. ~220 ms cold
+  and ~130 ms warm against 125 sessions and ~330 MB of transcripts.
 - **One-off sessions** with fewer than two real prompts are hidden by default.
 - **Flags:** `--here`, `--all`, `--json`, `--yolo`, `--print-shim`, `--help`,
   `--version`.

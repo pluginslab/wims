@@ -128,8 +128,8 @@ Three things keep it instant across hundreds of megabytes of transcripts:
   file's path, size and mtime. Transcripts are append-only, so only changed files
   are re-read.
 
-On a real machine with 122 sessions and 412 MB of transcripts, that is ~240 ms
-cold and ~140 ms warm.
+On a real machine with 125 sessions and ~330 MB of transcripts, that is ~220 ms
+cold and ~130 ms warm.
 
 Titles come from Claude Code's own `ai-title` where one exists, falling back to
 your first prompt, then the folder name.
