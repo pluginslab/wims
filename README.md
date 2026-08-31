@@ -5,6 +5,7 @@
 **Find, preview and resume any Claude Code session, from any folder.**
 
 [![CI](https://github.com/pluginslab/wims/actions/workflows/ci.yml/badge.svg)](https://github.com/pluginslab/wims/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@pluginslab/wims.svg)](https://www.npmjs.com/package/@pluginslab/wims)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen.svg)](https://nodejs.org)
 
