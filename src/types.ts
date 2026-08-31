@@ -1,5 +1,5 @@
 export interface Session {
-  /** Claude Code session UUID — the thing `claude --resume` wants. */
+  /** Claude Code session UUID, the thing `claude --resume` wants. */
   id: string;
   /** Absolute path to the session transcript (.jsonl). */
   file: string;

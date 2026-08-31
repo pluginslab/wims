@@ -1,8 +1,8 @@
 /**
  * Turns a rendered Ink frame into a standalone SVG terminal screenshot.
  *
- * Ink's headless output is a full frame containing only SGR colour codes — no
- * cursor movement — so this only has to track styling, not emulate a terminal.
+ * Ink's headless output is a full frame containing only SGR colour codes,
+ * no cursor movement, so this only has to track styling, not emulate a terminal.
  *
  * Every run is placed at an explicit x and given a textLength, so the columns
  * stay aligned even where the viewer's monospace font has different metrics

@@ -9,7 +9,7 @@ export const SKIP_FLAG = '--dangerously-skip-permissions';
 /**
  * The shell shim exports WIMS_ACTION_FILE and reads back a single tab-separated
  * line: kind, cwd, sessionId, extra-args. That indirection exists because no
- * child process can change its parent's working directory — the shim has to run
+ * child process can change its parent's working directory, so the shim has to run
  * the `cd` itself. The fourth field is empty unless the user armed skip-perms.
  */
 export function emitAction(action: Action): boolean {

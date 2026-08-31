@@ -61,7 +61,7 @@ export function Preview({ session, width, hit }: { session?: Session; width: num
           {line}
         </Text>
       ))}
-      {session.cwdMissing && <Text color="red">folder no longer exists — resume will fail</Text>}
+      {session.cwdMissing && <Text color="red">folder no longer exists, resume will fail</Text>}
 
       <Box height={1} />
 

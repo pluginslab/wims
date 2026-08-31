@@ -19,7 +19,7 @@ happened, and what you expected.
 Useful context if you are assessing risk:
 
 - **It reads** your Claude Code config directory: the session transcripts under
-  `projects/` and the prompt log `history.jsonl`. That data is personal — it
+  `projects/` and the prompt log `history.jsonl`. That data is personal: it
   contains your folder paths and everything you have typed to Claude.
 - **It writes** a metadata cache at `<claude-config>/wims/cache.json`, and a
   temporary action file in `$TMPDIR` that the shell shim reads and deletes.

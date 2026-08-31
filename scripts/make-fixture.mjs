@@ -3,7 +3,7 @@
  * Builds a throwaway Claude config directory full of invented sessions.
  *
  * wims honours CLAUDE_CONFIG_DIR, so pointing it at the result runs the real
- * scanner over real (if fictional) transcripts — which is what makes both
+ * scanner over real (if fictional) transcripts, which is what makes both
  * `npm run demo` and the README screenshot honest rather than mocked up.
  *
  *   node scripts/make-fixture.mjs [outDir]

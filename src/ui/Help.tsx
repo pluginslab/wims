@@ -21,7 +21,7 @@ export function Help({ shimActive }: { shimActive: boolean }) {
   return (
     <Box flexDirection="column" paddingX={2} paddingY={1}>
       <Text bold color="cyan">
-        wims — where is my session
+        wims: where is my session
       </Text>
       <Box height={1} />
       {KEYS.map(([k, d]) => (
@@ -40,7 +40,7 @@ export function Help({ shimActive }: { shimActive: boolean }) {
       <Text dimColor>It is armed per run of wims and is always off again next time you open it.</Text>
       <Box height={1} />
       {shimActive ? (
-        <Text color="green">Shell shim active — your shell will stay in the session's folder.</Text>
+        <Text color="green">Shell shim active. Your shell will stay in the session's folder.</Text>
       ) : (
         <Text color="yellow">
           Shell shim not installed. Claude will run in the right folder, but your shell returns to where you

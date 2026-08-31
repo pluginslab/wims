@@ -22,7 +22,7 @@ function version(): string {
   }
 }
 
-const HELP = `wims — where is my session
+const HELP = `wims: where is my session
 
   Find, preview and resume any Claude Code session, from any folder.
 

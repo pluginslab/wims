@@ -271,7 +271,7 @@ export function App({
         </Box>
       </Box>
 
-      {/* Footer. Every branch truncates rather than wraps — a second footer
+      {/* Footer. Every branch truncates rather than wraps. A second footer
           line would push the whole layout off the bottom of the screen. */}
       <Box paddingX={1} overflow="hidden">
         {mode === 'confirm' && current ? (

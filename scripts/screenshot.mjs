@@ -4,7 +4,7 @@
  *
  * Points the real scanner at the demo fixture, renders the real Ink component
  * at a fixed size, and converts the resulting frame to SVG. Nothing here mocks
- * the UI — it is the same code path the CLI runs, so the screenshots cannot
+ * the UI. It is the same code path the CLI runs, so the screenshots cannot
  * drift away from what the tool actually looks like.
  *
  *   npm run screenshot
@@ -49,7 +49,7 @@ const { App } = await import('../dist/ui/App.js');
 
 const { sessions, history } = scan();
 if (sessions.length === 0) {
-  throw new Error(`No sessions in the fixture at ${FIXTURE} — run: node scripts/make-fixture.mjs`);
+  throw new Error(`No sessions in the fixture at ${FIXTURE}. Run: node scripts/make-fixture.mjs`);
 }
 
 /**
@@ -103,12 +103,12 @@ async function frameFor(query, rows) {
 }
 
 const SHOTS = [
-  { file: 'wims.svg', query: '', rows: 27, title: 'wims — every Claude Code session, from any folder' },
+  { file: 'wims.svg', query: '', rows: 27, title: 'wims: every Claude Code session, from any folder' },
   {
     file: 'wims-search.svg',
     query: '/webhook',
     rows: 14,
-    title: 'wims — searching every prompt you have ever sent',
+    title: 'wims: searching every prompt you have ever sent',
   },
 ];
 

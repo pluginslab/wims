@@ -1,4 +1,4 @@
-# wims shell function — fish.
+# wims shell function for fish.
 #
 # A child process can never change its parent's working directory, so the TUI
 # writes its choice to a temp file and this function performs the cd itself.
@@ -6,7 +6,7 @@
 # Source this from ~/.config/fish/config.fish, or save it as
 # ~/.config/fish/functions/wims.fish
 
-function wims --description "Where Is My Session — find and resume a Claude Code session"
+function wims --description "Where Is My Session: find and resume a Claude Code session"
     if not command -q wims-tui
         echo "wims: wims-tui is not on your PATH. Re-run install.sh." >&2
         return 127

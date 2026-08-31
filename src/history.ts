@@ -5,7 +5,7 @@ import type { HistoryEntry, HistoryIndex } from './types.js';
 /**
  * ~/.claude/history.jsonl records every prompt you have ever submitted, tagged
  * with its sessionId and project path. It is small (single-digit MB) and gives
- * us exact prompt counts plus a ready-made full-text search index — which is
+ * us exact prompt counts plus a ready-made full-text search index, which is
  * why wims never has to read the (often hundreds of MB) transcripts themselves.
  *
  * It is best-effort: entries may be rotated away, and Claude Code is free to

@@ -167,7 +167,7 @@ test('ctrl+d asks before deleting and n cancels', async () => {
   assert.match(screen(r), /Delete .* permanently\?/);
   await type(r, 'n');
   assert.doesNotMatch(screen(r), /permanently\?/);
-  // Still there — nothing was removed.
+  // Still there; nothing was removed.
   assert.match(screen(r), /Configure secondary domain/);
 });
 

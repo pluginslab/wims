@@ -1,7 +1,7 @@
 # Contributing to wims
 
 Thanks for taking a look. wims is small on purpose, so most changes are easy to
-reason about — this file exists to save you the archaeology.
+reason about, and this file exists to save you the archaeology.
 
 ## Getting set up
 
@@ -13,7 +13,7 @@ npm run build
 npm test
 ```
 
-You need **Node 20+**. You do not need Claude Code installed to work on wims —
+You need **Node 20+**. You do not need Claude Code installed to work on wims,
 only to actually resume a session.
 
 To run your working copy against your real sessions:
@@ -35,7 +35,7 @@ npm run demo:fixture  # just build it, into .demo/
 
 The fixture gets its own `HOME` too (`.demo/home`), so the invented
 `~/code/acme-storefront` folders genuinely exist on disk and resolve the way
-real ones would. Everything in `scripts/demo-data.mjs` is fictional — please
+real ones would. Everything in `scripts/demo-data.mjs` is fictional. Please
 keep it that way, and never commit anything derived from your real sessions.
 
 ## How the code fits together
@@ -74,7 +74,7 @@ Three design constraints worth knowing before you change things:
 npm test        # builds, then runs everything
 ```
 
-The suite drives the real Ink component through `ink-testing-library` —
+The suite drives the real Ink component through `ink-testing-library`:
 keystrokes in, rendered frames and emitted actions out. If you add a keybinding,
 add a test that presses it and asserts the action or the frame.
 
@@ -108,7 +108,7 @@ PR so the README cannot drift.
 - One change per PR.
 - Add or update tests.
 - Update `CHANGELOG.md` under an `## [Unreleased]` heading. Maintainers pick the
-  version at release time — please do not bump `package.json` yourself.
+  version at release time, so please do not bump `package.json` yourself.
 - Regenerate screenshots if the UI moved.
 - Say what you tested, and on which shell and OS. The fish shim in particular is
   under-tested; reports are genuinely useful.
@@ -119,7 +119,7 @@ Include your OS, shell, `node --version`, `claude --version`, and `wims
 --version`. If it is a display problem, the terminal and its width help a lot.
 
 `wims --json` prints the metadata it derived without opening the TUI, which is
-usually the fastest way to show what it saw — but **read it before pasting it**,
+usually the fastest way to show what it saw, but **read it before pasting it**,
 since it contains your real folder paths and prompt text.
 
 ### The raster OG image

@@ -1,4 +1,4 @@
-# wims shell function — bash and zsh.
+# wims shell function for bash and zsh.
 #
 # A child process can never change its parent's working directory, so the TUI
 # writes its choice to a temp file and this function performs the cd itself.

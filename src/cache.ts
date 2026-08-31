@@ -20,7 +20,7 @@ export class MetaCache {
       // A version bump invalidates everything rather than risking stale shapes.
       if (parsed?.version === CACHE_VERSION && parsed.entries) this.data = parsed;
     } catch {
-      // Missing or corrupt cache is not an error — we just rebuild it.
+      // Missing or corrupt cache is not an error; we just rebuild it.
     }
   }
 

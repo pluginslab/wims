@@ -4,7 +4,7 @@ import fs from 'node:fs';
 
 /**
  * Claude Code honours CLAUDE_CONFIG_DIR; fall back to ~/.claude.
- * Never hardcode a home directory — this ships to other people's machines.
+ * Never hardcode a home directory: this ships to other people's machines.
  */
 export function claudeDir(): string {
   const override = process.env.CLAUDE_CONFIG_DIR?.trim();

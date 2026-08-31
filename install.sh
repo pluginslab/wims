@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# wims installer — builds the TUI, links the binary, and wires up the shell
+# wims installer: builds the TUI, links the binary, and wires up the shell
 # function that makes `cd` stick. Safe to re-run; use --uninstall to reverse.
 set -euo pipefail
 
@@ -79,7 +79,7 @@ command -v node >/dev/null 2>&1 || die "node is required (v20 or newer)."
 NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]')"
 [ "$NODE_MAJOR" -ge 20 ] || die "node v20+ required, found $(node -v)."
 command -v npm >/dev/null 2>&1 || die "npm is required."
-command -v claude >/dev/null 2>&1 || warn "'claude' is not on your PATH — wims can still browse, but not resume."
+command -v claude >/dev/null 2>&1 || warn "'claude' is not on your PATH, so wims can still browse, but not resume."
 
 # --- build -------------------------------------------------------------------
 info "Installing dependencies…"
@@ -98,7 +98,7 @@ ok "Linked $BIN_DIR/wims-tui"
 
 case ":$PATH:" in
   *":$BIN_DIR:"*) ;;
-  *) warn "$BIN_DIR is not on your PATH — add it, or wims will not be found." ;;
+  *) warn "$BIN_DIR is not on your PATH. Add it, or wims will not be found." ;;
 esac
 
 # --- install the shell function ---------------------------------------------

@@ -51,7 +51,7 @@ function parseLines(chunk: string, dropFirstPartial: boolean): any[] {
     try {
       out.push(JSON.parse(line));
     } catch {
-      // Truncated line at a window boundary — expected, skip it.
+      // Truncated line at a window boundary: expected, so skip it.
     }
   }
   return out;
