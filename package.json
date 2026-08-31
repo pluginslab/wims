@@ -1,5 +1,5 @@
 {
-  "name": "wims",
+  "name": "@pluginslab/wims",
   "version": "1.0.0",
   "description": "Where Is My Session — find, preview and resume any Claude Code session from any folder",
   "keywords": [
@@ -20,7 +20,6 @@
   "files": [
     "dist",
     "shim",
-    "install.sh",
     "README.md",
     "LICENSE"
   ],
@@ -56,5 +55,8 @@
     "url": "https://github.com/pluginslab/wims/issues"
   },
   "homepage": "https://github.com/pluginslab/wims#readme",
-  "author": "Pluginslab"
+  "author": "Pluginslab",
+  "publishConfig": {
+    "access": "public"
+  }
 }
