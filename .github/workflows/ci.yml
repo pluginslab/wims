@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (node ${{ matrix.node }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        node: ['20', '22']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+
+      # `npm test` builds first, so this covers typechecking too.
+      - run: npm test
+
+  shim:
+    name: shell shim (${{ matrix.shell }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shell: [bash, zsh]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install zsh
+        if: matrix.shell == 'zsh'
+        run: sudo apt-get update && sudo apt-get install -y zsh
+
+      # The shim is the piece that makes `cd` stick, and it is plain shell that
+      # the TypeScript suite cannot reach. Exercise it against stubs.
+      - name: Verify the shim resumes, cds, and drops unknown flags
+        run: |
+          set -euo pipefail
+          BIN="$(mktemp -d)"; PROJ="$(mktemp -d)"
+          cat > "$BIN/claude" <<'EOF'
+          #!/bin/sh
+          printf 'ARGS=[%s]\n' "$*"
+          EOF
+          chmod +x "$BIN/claude"
+
+          emit() {
+            printf '#!/bin/sh\nprintf %s > "$WIMS_ACTION_FILE"\n' "'$1'" > "$BIN/wims-tui"
+            chmod +x "$BIN/wims-tui"
+          }
+          run() { PATH="$BIN:$PATH" ${{ matrix.shell }} -c ". ./shim/wims.sh; wims; pwd"; }
+
+          emit "resume\t$PROJ\tSID\t\n"
+          run | tee /tmp/out1
+          grep -q 'ARGS=\[--resume SID\]' /tmp/out1
+
+          emit "resume\t$PROJ\tSID\t--dangerously-skip-permissions\n"
+          run | tee /tmp/out2
+          grep -q 'ARGS=\[--resume SID --dangerously-skip-permissions\]' /tmp/out2
+
+          emit "resume\t$PROJ\tSID\t--something-else\n"
+          run | tee /tmp/out3
+          grep -q 'ARGS=\[--resume SID\]' /tmp/out3
+
+          emit "cd\t$PROJ\tSID\t\n"
+          run | tee /tmp/out4
+          ! grep -q 'ARGS=' /tmp/out4
+          grep -q "$PROJ" /tmp/out4
+
+          echo "shim OK on ${{ matrix.shell }}"

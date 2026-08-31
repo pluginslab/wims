@@ -1,0 +1,60 @@
+{
+  "name": "wims",
+  "version": "1.0.0",
+  "description": "Where Is My Session — find, preview and resume any Claude Code session from any folder",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cli",
+    "tui",
+    "ink",
+    "sessions",
+    "resume",
+    "fzf"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "wims-tui": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "shim",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test \"dist/__tests__/*.test.js\"",
+    "demo": "node scripts/make-fixture.mjs && HOME=$PWD/.demo/home CLAUDE_CONFIG_DIR=$PWD/.demo/claude node dist/cli.js",
+    "demo:fixture": "node scripts/make-fixture.mjs",
+    "screenshot": "npm run build && node scripts/make-fixture.mjs && node scripts/screenshot.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ink": "^5.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "ink-testing-library": "^4.0.0",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pluginslab/wims.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pluginslab/wims/issues"
+  },
+  "homepage": "https://github.com/pluginslab/wims#readme",
+  "author": "Pluginslab"
+}

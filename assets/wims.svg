@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="872" height="602" viewBox="0 0 872 602" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="14">
+  <rect width="872" height="602" rx="10" fill="#161b22"/>
+  <rect x="0.5" y="0.5" width="871" height="601" rx="9.5" fill="none" stroke="#30363d"/>
+  <rect x="1" y="34" width="870" height="567" fill="#0d1117"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="436" y="22" text-anchor="middle" fill="#8b949e" font-size="12">wims — every Claude Code session, from any folder</text>
+  <g>
+
+  </g>
+  <g xml:space="preserve">
+    <text x="24.40" y="48.00" textLength="25.20" lengthAdjust="spacing" fill="#56d4dd">&gt; ▌</text>
+    <text x="805.60" y="48.00" textLength="42.00" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">12/12</text>
+    <text x="16.00" y="68.00" textLength="8.40" lengthAdjust="spacing" fill="#56d4dd">▸</text>
+    <text x="32.80" y="68.00" textLength="218.40" lengthAdjust="spacing" fill="#56d4dd" font-weight="600">Add Stripe webhook retries</text>
+    <text x="368.80" y="68.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="68.00" textLength="218.40" lengthAdjust="spacing" fill="#56d4dd" font-weight="600">Add Stripe webhook retries</text>
+    <text x="32.80" y="88.00" textLength="126.00" lengthAdjust="spacing" fill="#7ee787">acme-storefront</text>
+    <text x="343.60" y="88.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">2h</text>
+    <text x="368.80" y="88.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="108.00" textLength="201.60" lengthAdjust="spacing" fill="#c9d1d9">Fix flaky checkout tests</text>
+    <text x="368.80" y="108.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="108.00" textLength="184.80" lengthAdjust="spacing" fill="#7ee787">~/code/acme-storefront</text>
+    <text x="32.80" y="128.00" textLength="126.00" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">acme-storefront</text>
+    <text x="343.60" y="128.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">6h</text>
+    <text x="368.80" y="128.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="148.00" textLength="235.20" lengthAdjust="spacing" fill="#c9d1d9">Refactor the auth middleware</text>
+    <text x="368.80" y="148.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="148.00" textLength="50.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">branch</text>
+    <text x="461.20" y="148.00" textLength="33.60" lengthAdjust="spacing" fill="#c9d1d9">main</text>
+    <text x="32.80" y="168.00" textLength="92.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">api-gateway</text>
+    <text x="343.60" y="168.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">1d</text>
+    <text x="368.80" y="168.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="168.00" textLength="67.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">activity</text>
+    <text x="461.20" y="168.00" textLength="50.40" lengthAdjust="spacing" fill="#c9d1d9">May 14</text>
+    <text x="520.00" y="168.00" textLength="67.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">(2h ago)</text>
+    <text x="32.80" y="188.00" textLength="218.40" lengthAdjust="spacing" fill="#c9d1d9">Debug slow dashboard query</text>
+    <text x="368.80" y="188.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="188.00" textLength="33.60" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">size</text>
+    <text x="461.20" y="188.00" textLength="151.20" lengthAdjust="spacing" fill="#c9d1d9">5 prompts · 869 KB</text>
+    <text x="32.80" y="208.00" textLength="109.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">analytics-api</text>
+    <text x="343.60" y="208.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">2d</text>
+    <text x="368.80" y="208.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="208.00" textLength="50.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">cc ver</text>
+    <text x="461.20" y="208.00" textLength="58.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">2.1.251</text>
+    <text x="32.80" y="228.00" textLength="252.00" lengthAdjust="spacing" fill="#c9d1d9">Set up Cloudflare Pages deploy</text>
+    <text x="368.80" y="228.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="228.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">id</text>
+    <text x="461.20" y="228.00" textLength="302.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">9f2c1a44-7b3e-4c18-9a52-1d6e0b8f3a71</text>
+    <text x="32.80" y="248.00" textLength="75.60" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">docs-site</text>
+    <text x="343.60" y="248.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">3d</text>
+    <text x="368.80" y="248.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="268.00" textLength="285.60" lengthAdjust="spacing" fill="#c9d1d9">Add dark mode to the design system</text>
+    <text x="368.80" y="268.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="268.00" textLength="92.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">last prompt</text>
+    <text x="32.80" y="288.00" textLength="50.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">ui-kit</text>
+    <text x="343.60" y="288.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">4d</text>
+    <text x="368.80" y="288.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="385.60" y="288.00" textLength="58.80" lengthAdjust="spacing" fill="#c9d1d9">ship it</text>
+    <text x="32.80" y="308.00" textLength="310.80" lengthAdjust="spacing" fill="#c9d1d9">Investigate memory leak in the worker</text>
+    <text x="368.80" y="308.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="328.00" textLength="100.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">queue-worker</text>
+    <text x="343.60" y="328.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">6d</text>
+    <text x="368.80" y="328.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="348.00" textLength="235.20" lengthAdjust="spacing" fill="#c9d1d9">Write release notes for v2.1</text>
+    <text x="368.80" y="348.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="368.00" textLength="75.60" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">cli-tools</text>
+    <text x="343.60" y="368.00" textLength="16.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">8d</text>
+    <text x="368.80" y="368.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="388.00" textLength="310.80" lengthAdjust="spacing" fill="#c9d1d9">Port CI from Travis to GitHub Actions</text>
+    <text x="368.80" y="388.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="408.00" textLength="109.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">legacy-import</text>
+    <text x="335.20" y="408.00" textLength="25.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">12d</text>
+    <text x="368.80" y="408.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="428.00" textLength="218.40" lengthAdjust="spacing" fill="#c9d1d9">Sketch the onboarding flow</text>
+    <text x="368.80" y="428.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="448.00" textLength="42.00" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">notes</text>
+    <text x="335.20" y="448.00" textLength="25.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">15d</text>
+    <text x="368.80" y="448.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="468.00" textLength="277.20" lengthAdjust="spacing" fill="#c9d1d9">Tune the Postgres connection pool</text>
+    <text x="368.80" y="468.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="488.00" textLength="109.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">analytics-api</text>
+    <text x="335.20" y="488.00" textLength="25.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">21d</text>
+    <text x="368.80" y="488.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="508.00" textLength="210.00" lengthAdjust="spacing" fill="#c9d1d9">Migrate the blog to Astro</text>
+    <text x="368.80" y="508.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="32.80" y="528.00" textLength="109.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">personal-site</text>
+    <text x="335.20" y="528.00" textLength="25.20" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">28d</text>
+    <text x="368.80" y="528.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="368.80" y="548.00" textLength="8.40" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">│</text>
+    <text x="24.40" y="568.00" textLength="814.80" lengthAdjust="spacing" fill="#c9d1d9" opacity="0.55">↵ resume · ^O cd · ^N new · ^X skip-perms · ^Y copy · ^D delete · ? help · ~/code/acme-storefront</text>
+  </g>
+</svg>
