@@ -107,7 +107,7 @@ const SHOTS = [
   {
     file: 'wims-search.svg',
     query: '/webhook',
-    rows: 14,
+    rows: 16,
     title: 'wims: searching every prompt you have ever sent',
   },
 ];
