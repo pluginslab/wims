@@ -30,7 +30,7 @@
     "start": "node dist/cli.js",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build",
-    "test": "npm run build && node --test \"dist/__tests__/*.test.js\"",
+    "test": "npm run build && node --test dist/__tests__/*.test.js",
     "demo": "node scripts/make-fixture.mjs && HOME=$PWD/.demo/home CLAUDE_CONFIG_DIR=$PWD/.demo/claude node dist/cli.js",
     "demo:fixture": "node scripts/make-fixture.mjs",
     "screenshot": "npm run build && node scripts/make-fixture.mjs && node scripts/screenshot.mjs"
